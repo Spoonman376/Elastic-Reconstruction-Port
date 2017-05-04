@@ -340,7 +340,7 @@
 		0323966E1EBBA52F00EEBE5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../ScannerTest/includes/";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/BuildCorrespondence/includes/";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/pcl/1.8.0_6/lib,
@@ -354,7 +354,7 @@
 		0323966F1EBBA52F00EEBE5C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../ScannerTest/includes/";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/BuildCorrespondence/includes/";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/pcl/1.8.0_6/lib,
