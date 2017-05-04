@@ -224,7 +224,7 @@
 		03BC72BF1EBBDA6F00F98B9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GraphOptimizer/includes/";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GraphOptimizer/includes/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -232,7 +232,7 @@
 		03BC72C01EBBDA6F00F98B9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GraphOptimizer/includes/";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GraphOptimizer/includes/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
