@@ -240,7 +240,7 @@
 		03BC72DC1EBCEE5000F98B9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Integrate/includes/";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Integrate/includes/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,7 +248,7 @@
 		03BC72DD1EBCEE5000F98B9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Integrate/includes/";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Integrate/includes/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
