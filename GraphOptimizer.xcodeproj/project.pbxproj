@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0380547C1EC3B5A600B46F74 /* edge_se3Switchable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 038054751EC3B5A600B46F74 /* edge_se3Switchable.cpp */; };
+		0380547D1EC3B5A600B46F74 /* edge_switchPrior.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 038054771EC3B5A600B46F74 /* edge_switchPrior.cpp */; };
+		0380547E1EC3B5A600B46F74 /* types_g2o_robust.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 038054791EC3B5A600B46F74 /* types_g2o_robust.cpp */; };
+		0380547F1EC3B5A600B46F74 /* vertex_switchLinear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0380547A1EC3B5A600B46F74 /* vertex_switchLinear.cpp */; };
 		03BC72C81EBBDA9400F98B9E /* GraphOptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03BC72C11EBBDA9400F98B9E /* GraphOptimizer.cpp */; };
 		03BC72C91EBBDA9400F98B9E /* OptApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03BC72C31EBBDA9400F98B9E /* OptApp.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +28,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		038054751EC3B5A600B46F74 /* edge_se3Switchable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = edge_se3Switchable.cpp; sourceTree = "<group>"; };
+		038054761EC3B5A600B46F74 /* edge_se3Switchable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = edge_se3Switchable.h; sourceTree = "<group>"; };
+		038054771EC3B5A600B46F74 /* edge_switchPrior.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = edge_switchPrior.cpp; sourceTree = "<group>"; };
+		038054781EC3B5A600B46F74 /* edge_switchPrior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = edge_switchPrior.h; sourceTree = "<group>"; };
+		038054791EC3B5A600B46F74 /* types_g2o_robust.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = types_g2o_robust.cpp; sourceTree = "<group>"; };
+		0380547A1EC3B5A600B46F74 /* vertex_switchLinear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vertex_switchLinear.cpp; sourceTree = "<group>"; };
+		0380547B1EC3B5A600B46F74 /* vertex_switchLinear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vertex_switchLinear.h; sourceTree = "<group>"; };
 		03BC72B71EBBDA6F00F98B9E /* GraphOptimizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GraphOptimizer; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BC72C11EBBDA9400F98B9E /* GraphOptimizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphOptimizer.cpp; sourceTree = "<group>"; };
 		03BC72C21EBBDA9400F98B9E /* helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
@@ -42,6 +53,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		038054741EC3B58500B46F74 /* vertigo */ = {
+			isa = PBXGroup;
+			children = (
+				038054751EC3B5A600B46F74 /* edge_se3Switchable.cpp */,
+				038054761EC3B5A600B46F74 /* edge_se3Switchable.h */,
+				038054771EC3B5A600B46F74 /* edge_switchPrior.cpp */,
+				038054781EC3B5A600B46F74 /* edge_switchPrior.h */,
+				038054791EC3B5A600B46F74 /* types_g2o_robust.cpp */,
+				0380547A1EC3B5A600B46F74 /* vertex_switchLinear.cpp */,
+				0380547B1EC3B5A600B46F74 /* vertex_switchLinear.h */,
+			);
+			path = vertigo;
+			sourceTree = "<group>";
+		};
 		03BC72AE1EBBDA6F00F98B9E = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +90,7 @@
 				03BC72C21EBBDA9400F98B9E /* helper.h */,
 				03BC72C31EBBDA9400F98B9E /* OptApp.cpp */,
 				03BC72C41EBBDA9400F98B9E /* OptApp.h */,
+				038054741EC3B58500B46F74 /* vertigo */,
 			);
 			path = GraphOptimizer;
 			sourceTree = "<group>";
@@ -126,8 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0380547F1EC3B5A600B46F74 /* vertex_switchLinear.cpp in Sources */,
+				0380547E1EC3B5A600B46F74 /* types_g2o_robust.cpp in Sources */,
 				03BC72C81EBBDA9400F98B9E /* GraphOptimizer.cpp in Sources */,
 				03BC72C91EBBDA9400F98B9E /* OptApp.cpp in Sources */,
+				0380547C1EC3B5A600B46F74 /* edge_se3Switchable.cpp in Sources */,
+				0380547D1EC3B5A600B46F74 /* edge_switchPrior.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
