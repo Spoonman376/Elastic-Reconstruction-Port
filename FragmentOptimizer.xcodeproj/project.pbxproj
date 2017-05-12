@@ -378,10 +378,11 @@
 		032396C21EBBC15400EEBE5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = NEWEIGEN;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/FragmentOptimizer/includes/",
-					"$(PROJECT_DIR)/FragmentOptimizer/external/",
 					"$(PROJECT_DIR)/FragmentOptimizer/includes/suitesparse",
+					/usr/local/Cellar/eigen/3.3.3/include/eigen3/,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -397,10 +398,11 @@
 		032396C31EBBC15400EEBE5C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = NEWEIGEN;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/FragmentOptimizer/includes/",
-					"$(PROJECT_DIR)/FragmentOptimizer/external/",
 					"$(PROJECT_DIR)/FragmentOptimizer/includes/suitesparse",
+					/usr/local/Cellar/eigen/3.3.3/include/eigen3/,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
