@@ -13,6 +13,24 @@ option(Build_GraphOptimizer "Build GraphOptimizer")
 option(Build_Integrate "Build Integrate")
 option(Build_GlobalRegistration "Build GlobalRegistration")
 
+#SuiteSparse  stuff:
+
+if(FALSE)
+#function( SetupSuiteSparse )
+
+    message("Finding/handling SuiteSparse stuff!")
+    #find_package(SuiteSparse QUIET NO_MODULE)
+    find_package(SuiteSparse QUIET)
+    if(NOT SuiteSparse_FOUND)
+        message("IT WASN'T FOUND")
+        add_subdirectory(${CMAKE_SOURCE_DIR}/suitesparse)
+        #TODO: Add in the SuiteSparse_LIBRARIES /etc.
+    else()
+        message("OHBOYOHBOY IT WAS FOUND")
+    endif()
+#endfunction( SetupSuiteSparse )
+endif()
+
 #Building B.C.
 if(Build_BuildCorrespondence)
 	add_subdirectory(BuildCorrespondence)

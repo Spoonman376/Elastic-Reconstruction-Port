@@ -1,0 +1,3 @@
+[submodule "suitesparse-metis-for-windows"]
+	path = suitesparse
+	url = git@github.com:jlblancoc/suitesparse-metis-for-windows.git
