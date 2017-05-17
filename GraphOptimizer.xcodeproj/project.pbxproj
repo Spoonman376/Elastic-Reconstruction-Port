@@ -7,39 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0380547C1EC3B5A600B46F74 /* edge_se3Switchable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 038054751EC3B5A600B46F74 /* edge_se3Switchable.cpp */; };
-		0380547D1EC3B5A600B46F74 /* edge_switchPrior.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 038054771EC3B5A600B46F74 /* edge_switchPrior.cpp */; };
-		0380547E1EC3B5A600B46F74 /* types_g2o_robust.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 038054791EC3B5A600B46F74 /* types_g2o_robust.cpp */; };
-		0380547F1EC3B5A600B46F74 /* vertex_switchLinear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0380547A1EC3B5A600B46F74 /* vertex_switchLinear.cpp */; };
+		0378E60D1ECB872C00884C63 /* libg2o_core.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C27A581ECA147D000F7757 /* libg2o_core.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0378E60E1ECB878300884C63 /* libg2o_csparse_extension.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C27A591ECA147D000F7757 /* libg2o_csparse_extension.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0378E60F1ECB878300884C63 /* libg2o_ext_csparse.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C27A5A1ECA147D000F7757 /* libg2o_ext_csparse.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0378E6101ECB878300884C63 /* libg2o_solver_csparse.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C27A5B1ECA147D000F7757 /* libg2o_solver_csparse.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0378E6111ECB878300884C63 /* libg2o_solver_dense.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C27A5C1ECA147D000F7757 /* libg2o_solver_dense.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0378E6121ECB878300884C63 /* libg2o_solver_pcg.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C27A5D1ECA147D000F7757 /* libg2o_solver_pcg.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0378E6131ECB878300884C63 /* libg2o_stuff.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C27A5E1ECA147D000F7757 /* libg2o_stuff.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0378E6141ECB878300884C63 /* libg2o_types_slam3d.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C27A5F1ECA147D000F7757 /* libg2o_types_slam3d.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0378E6161ECB88A500884C63 /* libg2o_opengl_helper.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0378E6151ECB88A500884C63 /* libg2o_opengl_helper.dylib */; };
+		0378E6171ECB88B500884C63 /* libg2o_opengl_helper.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0378E6151ECB88A500884C63 /* libg2o_opengl_helper.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0380549D1EC3BBE900B46F74 /* libboost_filesystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0380549B1EC3BBE900B46F74 /* libboost_filesystem.dylib */; };
+		0380549E1EC3BBE900B46F74 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0380549C1EC3BBE900B46F74 /* libboost_system.dylib */; };
+		038054A71EC3BD9700B46F74 /* edge_se3Switchable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 038054A01EC3BD9700B46F74 /* edge_se3Switchable.cpp */; };
+		038054A81EC3BD9700B46F74 /* edge_switchPrior.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 038054A21EC3BD9700B46F74 /* edge_switchPrior.cpp */; };
+		038054A91EC3BD9700B46F74 /* types_g2o_robust.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 038054A41EC3BD9700B46F74 /* types_g2o_robust.cpp */; };
+		038054AA1EC3BD9700B46F74 /* vertex_switchLinear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 038054A51EC3BD9700B46F74 /* vertex_switchLinear.cpp */; };
 		03BC72C81EBBDA9400F98B9E /* GraphOptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03BC72C11EBBDA9400F98B9E /* GraphOptimizer.cpp */; };
 		03BC72C91EBBDA9400F98B9E /* OptApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03BC72C31EBBDA9400F98B9E /* OptApp.cpp */; };
+		03C27A601ECA147D000F7757 /* libg2o_core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C27A581ECA147D000F7757 /* libg2o_core.dylib */; };
+		03C27A611ECA147D000F7757 /* libg2o_csparse_extension.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C27A591ECA147D000F7757 /* libg2o_csparse_extension.dylib */; };
+		03C27A621ECA147D000F7757 /* libg2o_ext_csparse.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C27A5A1ECA147D000F7757 /* libg2o_ext_csparse.dylib */; };
+		03C27A631ECA147D000F7757 /* libg2o_solver_csparse.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C27A5B1ECA147D000F7757 /* libg2o_solver_csparse.dylib */; };
+		03C27A641ECA147D000F7757 /* libg2o_solver_dense.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C27A5C1ECA147D000F7757 /* libg2o_solver_dense.dylib */; };
+		03C27A651ECA147D000F7757 /* libg2o_solver_pcg.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C27A5D1ECA147D000F7757 /* libg2o_solver_pcg.dylib */; };
+		03C27A661ECA147D000F7757 /* libg2o_stuff.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C27A5E1ECA147D000F7757 /* libg2o_stuff.dylib */; };
+		03C27A671ECA147D000F7757 /* libg2o_types_slam3d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C27A5F1ECA147D000F7757 /* libg2o_types_slam3d.dylib */; };
+		03C27B0B1ECA3962000F7757 /* libboost_program_options.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C27B0A1ECA3962000F7757 /* libboost_program_options.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		03BC72B51EBBDA6F00F98B9E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
 			files = (
+				0378E6171ECB88B500884C63 /* libg2o_opengl_helper.dylib in CopyFiles */,
+				0378E60E1ECB878300884C63 /* libg2o_csparse_extension.dylib in CopyFiles */,
+				0378E60F1ECB878300884C63 /* libg2o_ext_csparse.dylib in CopyFiles */,
+				0378E6101ECB878300884C63 /* libg2o_solver_csparse.dylib in CopyFiles */,
+				0378E6111ECB878300884C63 /* libg2o_solver_dense.dylib in CopyFiles */,
+				0378E6121ECB878300884C63 /* libg2o_solver_pcg.dylib in CopyFiles */,
+				0378E6131ECB878300884C63 /* libg2o_stuff.dylib in CopyFiles */,
+				0378E6141ECB878300884C63 /* libg2o_types_slam3d.dylib in CopyFiles */,
+				0378E60D1ECB872C00884C63 /* libg2o_core.dylib in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		038054751EC3B5A600B46F74 /* edge_se3Switchable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = edge_se3Switchable.cpp; sourceTree = "<group>"; };
-		038054761EC3B5A600B46F74 /* edge_se3Switchable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = edge_se3Switchable.h; sourceTree = "<group>"; };
-		038054771EC3B5A600B46F74 /* edge_switchPrior.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = edge_switchPrior.cpp; sourceTree = "<group>"; };
-		038054781EC3B5A600B46F74 /* edge_switchPrior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = edge_switchPrior.h; sourceTree = "<group>"; };
-		038054791EC3B5A600B46F74 /* types_g2o_robust.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = types_g2o_robust.cpp; sourceTree = "<group>"; };
-		0380547A1EC3B5A600B46F74 /* vertex_switchLinear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vertex_switchLinear.cpp; sourceTree = "<group>"; };
-		0380547B1EC3B5A600B46F74 /* vertex_switchLinear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vertex_switchLinear.h; sourceTree = "<group>"; };
+		0378E6151ECB88A500884C63 /* libg2o_opengl_helper.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libg2o_opengl_helper.dylib; path = ../g2o/lib/libg2o_opengl_helper.dylib; sourceTree = "<group>"; };
+		0380549B1EC3BBE900B46F74 /* libboost_filesystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_filesystem.dylib; path = ../../../../../usr/local/Cellar/boost/1.64.0_1/lib/libboost_filesystem.dylib; sourceTree = "<group>"; };
+		0380549C1EC3BBE900B46F74 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = ../../../../../usr/local/Cellar/boost/1.64.0_1/lib/libboost_system.dylib; sourceTree = "<group>"; };
+		038054A01EC3BD9700B46F74 /* edge_se3Switchable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = edge_se3Switchable.cpp; sourceTree = "<group>"; };
+		038054A11EC3BD9700B46F74 /* edge_se3Switchable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = edge_se3Switchable.h; sourceTree = "<group>"; };
+		038054A21EC3BD9700B46F74 /* edge_switchPrior.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = edge_switchPrior.cpp; sourceTree = "<group>"; };
+		038054A31EC3BD9700B46F74 /* edge_switchPrior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = edge_switchPrior.h; sourceTree = "<group>"; };
+		038054A41EC3BD9700B46F74 /* types_g2o_robust.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = types_g2o_robust.cpp; sourceTree = "<group>"; };
+		038054A51EC3BD9700B46F74 /* vertex_switchLinear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vertex_switchLinear.cpp; sourceTree = "<group>"; };
+		038054A61EC3BD9700B46F74 /* vertex_switchLinear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vertex_switchLinear.h; sourceTree = "<group>"; };
 		03BC72B71EBBDA6F00F98B9E /* GraphOptimizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GraphOptimizer; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BC72C11EBBDA9400F98B9E /* GraphOptimizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphOptimizer.cpp; sourceTree = "<group>"; };
 		03BC72C21EBBDA9400F98B9E /* helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
 		03BC72C31EBBDA9400F98B9E /* OptApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OptApp.cpp; sourceTree = "<group>"; };
 		03BC72C41EBBDA9400F98B9E /* OptApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptApp.h; sourceTree = "<group>"; };
+		03C27A581ECA147D000F7757 /* libg2o_core.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libg2o_core.dylib; path = ../g2o/lib/libg2o_core.dylib; sourceTree = "<group>"; };
+		03C27A591ECA147D000F7757 /* libg2o_csparse_extension.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libg2o_csparse_extension.dylib; path = ../g2o/lib/libg2o_csparse_extension.dylib; sourceTree = "<group>"; };
+		03C27A5A1ECA147D000F7757 /* libg2o_ext_csparse.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libg2o_ext_csparse.dylib; path = ../g2o/lib/libg2o_ext_csparse.dylib; sourceTree = "<group>"; };
+		03C27A5B1ECA147D000F7757 /* libg2o_solver_csparse.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libg2o_solver_csparse.dylib; path = ../g2o/lib/libg2o_solver_csparse.dylib; sourceTree = "<group>"; };
+		03C27A5C1ECA147D000F7757 /* libg2o_solver_dense.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libg2o_solver_dense.dylib; path = ../g2o/lib/libg2o_solver_dense.dylib; sourceTree = "<group>"; };
+		03C27A5D1ECA147D000F7757 /* libg2o_solver_pcg.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libg2o_solver_pcg.dylib; path = ../g2o/lib/libg2o_solver_pcg.dylib; sourceTree = "<group>"; };
+		03C27A5E1ECA147D000F7757 /* libg2o_stuff.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libg2o_stuff.dylib; path = ../g2o/lib/libg2o_stuff.dylib; sourceTree = "<group>"; };
+		03C27A5F1ECA147D000F7757 /* libg2o_types_slam3d.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libg2o_types_slam3d.dylib; path = ../g2o/lib/libg2o_types_slam3d.dylib; sourceTree = "<group>"; };
+		03C27B0A1ECA3962000F7757 /* libboost_program_options.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_program_options.dylib; path = ../../../../../usr/local/Cellar/boost/1.64.0_1/lib/libboost_program_options.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,22 +89,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C27A601ECA147D000F7757 /* libg2o_core.dylib in Frameworks */,
+				03C27A611ECA147D000F7757 /* libg2o_csparse_extension.dylib in Frameworks */,
+				03C27A621ECA147D000F7757 /* libg2o_ext_csparse.dylib in Frameworks */,
+				0378E6161ECB88A500884C63 /* libg2o_opengl_helper.dylib in Frameworks */,
+				03C27A631ECA147D000F7757 /* libg2o_solver_csparse.dylib in Frameworks */,
+				03C27A641ECA147D000F7757 /* libg2o_solver_dense.dylib in Frameworks */,
+				03C27A651ECA147D000F7757 /* libg2o_solver_pcg.dylib in Frameworks */,
+				03C27A661ECA147D000F7757 /* libg2o_stuff.dylib in Frameworks */,
+				03C27A671ECA147D000F7757 /* libg2o_types_slam3d.dylib in Frameworks */,
+				03C27B0B1ECA3962000F7757 /* libboost_program_options.dylib in Frameworks */,
+				0380549D1EC3BBE900B46F74 /* libboost_filesystem.dylib in Frameworks */,
+				0380549E1EC3BBE900B46F74 /* libboost_system.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		038054741EC3B58500B46F74 /* vertigo */ = {
+		0380549A1EC3BBE900B46F74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				038054751EC3B5A600B46F74 /* edge_se3Switchable.cpp */,
-				038054761EC3B5A600B46F74 /* edge_se3Switchable.h */,
-				038054771EC3B5A600B46F74 /* edge_switchPrior.cpp */,
-				038054781EC3B5A600B46F74 /* edge_switchPrior.h */,
-				038054791EC3B5A600B46F74 /* types_g2o_robust.cpp */,
-				0380547A1EC3B5A600B46F74 /* vertex_switchLinear.cpp */,
-				0380547B1EC3B5A600B46F74 /* vertex_switchLinear.h */,
+				03C27A581ECA147D000F7757 /* libg2o_core.dylib */,
+				03C27A591ECA147D000F7757 /* libg2o_csparse_extension.dylib */,
+				03C27A5A1ECA147D000F7757 /* libg2o_ext_csparse.dylib */,
+				0378E6151ECB88A500884C63 /* libg2o_opengl_helper.dylib */,
+				03C27A5B1ECA147D000F7757 /* libg2o_solver_csparse.dylib */,
+				03C27A5C1ECA147D000F7757 /* libg2o_solver_dense.dylib */,
+				03C27A5D1ECA147D000F7757 /* libg2o_solver_pcg.dylib */,
+				03C27A5E1ECA147D000F7757 /* libg2o_stuff.dylib */,
+				03C27A5F1ECA147D000F7757 /* libg2o_types_slam3d.dylib */,
+				03C27B0A1ECA3962000F7757 /* libboost_program_options.dylib */,
+				0380549B1EC3BBE900B46F74 /* libboost_filesystem.dylib */,
+				0380549C1EC3BBE900B46F74 /* libboost_system.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0380549F1EC3BD5B00B46F74 /* vertigo */ = {
+			isa = PBXGroup;
+			children = (
+				038054A01EC3BD9700B46F74 /* edge_se3Switchable.cpp */,
+				038054A11EC3BD9700B46F74 /* edge_se3Switchable.h */,
+				038054A21EC3BD9700B46F74 /* edge_switchPrior.cpp */,
+				038054A31EC3BD9700B46F74 /* edge_switchPrior.h */,
+				038054A41EC3BD9700B46F74 /* types_g2o_robust.cpp */,
+				038054A51EC3BD9700B46F74 /* vertex_switchLinear.cpp */,
+				038054A61EC3BD9700B46F74 /* vertex_switchLinear.h */,
 			);
 			path = vertigo;
 			sourceTree = "<group>";
@@ -72,6 +145,7 @@
 			children = (
 				03BC72B91EBBDA6F00F98B9E /* GraphOptimizer */,
 				03BC72B81EBBDA6F00F98B9E /* Products */,
+				0380549A1EC3BBE900B46F74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,11 +160,11 @@
 		03BC72B91EBBDA6F00F98B9E /* GraphOptimizer */ = {
 			isa = PBXGroup;
 			children = (
+				0380549F1EC3BD5B00B46F74 /* vertigo */,
 				03BC72C11EBBDA9400F98B9E /* GraphOptimizer.cpp */,
 				03BC72C21EBBDA9400F98B9E /* helper.h */,
 				03BC72C31EBBDA9400F98B9E /* OptApp.cpp */,
 				03BC72C41EBBDA9400F98B9E /* OptApp.h */,
-				038054741EC3B58500B46F74 /* vertigo */,
 			);
 			path = GraphOptimizer;
 			sourceTree = "<group>";
@@ -152,12 +226,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0380547F1EC3B5A600B46F74 /* vertex_switchLinear.cpp in Sources */,
-				0380547E1EC3B5A600B46F74 /* types_g2o_robust.cpp in Sources */,
+				038054AA1EC3BD9700B46F74 /* vertex_switchLinear.cpp in Sources */,
+				038054A91EC3BD9700B46F74 /* types_g2o_robust.cpp in Sources */,
 				03BC72C81EBBDA9400F98B9E /* GraphOptimizer.cpp in Sources */,
 				03BC72C91EBBDA9400F98B9E /* OptApp.cpp in Sources */,
-				0380547C1EC3B5A600B46F74 /* edge_se3Switchable.cpp in Sources */,
-				0380547D1EC3B5A600B46F74 /* edge_switchPrior.cpp in Sources */,
+				038054A71EC3BD9700B46F74 /* edge_se3Switchable.cpp in Sources */,
+				038054A81EC3BD9700B46F74 /* edge_switchPrior.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +328,20 @@
 		03BC72BF1EBBDA6F00F98B9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GraphOptimizer/includes/**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.64.0_1/lib,
+					/Users/erik/Developer/Research/g2o/lib,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/GraphOptimizer/includes/",
+					"$(PROJECT_DIR)/GraphOptimizer/includes/csparse/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.64.0_1/lib,
+					/Users/erik/Developer/Research/g2o/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -262,7 +349,20 @@
 		03BC72C01EBBDA6F00F98B9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GraphOptimizer/includes/**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.64.0_1/lib,
+					/Users/erik/Developer/Research/g2o/lib,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/GraphOptimizer/includes/",
+					"$(PROJECT_DIR)/GraphOptimizer/includes/csparse/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.64.0_1/lib,
+					/Users/erik/Developer/Research/g2o/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
