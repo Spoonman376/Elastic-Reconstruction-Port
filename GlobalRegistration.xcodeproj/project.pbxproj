@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0320B8761ED4D76A00E30014 /* MyVoxelGridFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0320B8741ED4D76A00E30014 /* MyVoxelGridFilter.cpp */; };
 		03BC72AB1EBBD43000F98B9E /* GlobalRegistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03BC72A31EBBD43000F98B9E /* GlobalRegistration.cpp */; };
 		03BC72AC1EBBD43000F98B9E /* RansacCurvature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03BC72A61EBBD43000F98B9E /* RansacCurvature.cpp */; };
 		03D19DC01EC22220008E0164 /* libpcl_2d.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D19DA81EC22220008E0164 /* libpcl_2d.1.8.0.dylib */; };
@@ -51,6 +52,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0320B8741ED4D76A00E30014 /* MyVoxelGridFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyVoxelGridFilter.cpp; sourceTree = "<group>"; };
+		0320B8751ED4D76A00E30014 /* MyVoxelGridFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVoxelGridFilter.h; sourceTree = "<group>"; };
 		035F95861EBBD402006A703F /* GlobalRegistration */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GlobalRegistration; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BC72A31EBBD43000F98B9E /* GlobalRegistration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GlobalRegistration.cpp; sourceTree = "<group>"; };
 		03BC72A41EBBD43000F98B9E /* helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 				03BC72A51EBBD43000F98B9E /* PolyRejector.h */,
 				03BC72A61EBBD43000F98B9E /* RansacCurvature.cpp */,
 				03BC72A71EBBD43000F98B9E /* RansacCurvature.h */,
+				0320B8741ED4D76A00E30014 /* MyVoxelGridFilter.cpp */,
+				0320B8751ED4D76A00E30014 /* MyVoxelGridFilter.h */,
 			);
 			path = GlobalRegistration;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03BC72AB1EBBD43000F98B9E /* GlobalRegistration.cpp in Sources */,
+				0320B8761ED4D76A00E30014 /* MyVoxelGridFilter.cpp in Sources */,
 				03BC72AC1EBBD43000F98B9E /* RansacCurvature.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
