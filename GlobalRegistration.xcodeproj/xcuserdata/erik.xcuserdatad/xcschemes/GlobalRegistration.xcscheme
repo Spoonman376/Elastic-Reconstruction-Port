@@ -47,7 +47,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/erik/Desktop/Test_Data"
+      customWorkingDirectory = "/Users/erik/Desktop/Test_Data/GlobalRegistration"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -65,6 +65,22 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "office1-fragments-pcd/"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "bad_data/"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "office1-fragments-pcd/100-0.log"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "bad_data/100-0.log"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "25"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
