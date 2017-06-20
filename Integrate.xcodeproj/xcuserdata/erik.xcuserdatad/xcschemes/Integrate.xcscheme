@@ -47,7 +47,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/erik/Desktop/Test_Data/Integrate/ER.office1.oni/fo"
+      customWorkingDirectory = "/Users/erik/Desktop/3D-Reconstruction"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -64,7 +64,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "--pose_traj ./hack/pose.log --seg_traj ./hack/100-0.log --ctr ./hack/output.ctr --num $NUMPCDS --resolution 12 --camera ../cam.param -oni ../in.oni --length 4.0 --interval 50"
+            argument = "--pose_traj ./hack/pose.log --seg_traj ./hack/100-0.log --ctr ./hack/output.ctr --num $NUMPCDS --resolution 12 --camera ../cam.param -oni in.oni --length 4.0 --interval 50"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

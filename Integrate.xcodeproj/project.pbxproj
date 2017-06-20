@@ -40,6 +40,8 @@
 		03BC72EC1EBCF40700F98B9E /* IntegrateApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03BC72E11EBCF40700F98B9E /* IntegrateApp.cpp */; };
 		03BC72EE1EBCF40700F98B9E /* TSDFVolume.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03BC72E61EBCF40700F98B9E /* TSDFVolume.cpp */; };
 		03BC72EF1EBCF40700F98B9E /* TSDFVolumeUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03BC72E81EBCF40700F98B9E /* TSDFVolumeUnit.cpp */; };
+		03C5ED371EF98EFC00D27169 /* libOpenNI2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C5ED351EF98EFC00D27169 /* libOpenNI2.dylib */; };
+		03C5ED381EF98EFC00D27169 /* libOpenNI2.jni.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C5ED361EF98EFC00D27169 /* libOpenNI2.jni.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -118,6 +120,8 @@
 		03BC72E71EBCF40700F98B9E /* TSDFVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDFVolume.h; sourceTree = "<group>"; };
 		03BC72E81EBCF40700F98B9E /* TSDFVolumeUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TSDFVolumeUnit.cpp; sourceTree = "<group>"; };
 		03BC72E91EBCF40700F98B9E /* TSDFVolumeUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDFVolumeUnit.h; sourceTree = "<group>"; };
+		03C5ED351EF98EFC00D27169 /* libOpenNI2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOpenNI2.dylib; path = "../../../../../usr/local/Cellar/openni2/2.2.0-debian/lib/ni2/libOpenNI2.dylib"; sourceTree = "<group>"; };
+		03C5ED361EF98EFC00D27169 /* libOpenNI2.jni.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOpenNI2.jni.dylib; path = "../../../../../usr/local/Cellar/openni2/2.2.0-debian/lib/ni2/libOpenNI2.jni.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C5ED371EF98EFC00D27169 /* libOpenNI2.dylib in Frameworks */,
+				03C5ED381EF98EFC00D27169 /* libOpenNI2.jni.dylib in Frameworks */,
 				036C81D51EF2F5A4005AF49C /* libpcl_2d.1.8.0.dylib in Frameworks */,
 				036C81D61EF2F5A4005AF49C /* libpcl_3d_rec_framework.1.8.0.dylib in Frameworks */,
 				036C81D71EF2F5A4005AF49C /* libpcl_apps.1.8.0.dylib in Frameworks */,
@@ -162,6 +168,8 @@
 		03AD2F221ECCB84000916265 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03C5ED351EF98EFC00D27169 /* libOpenNI2.dylib */,
+				03C5ED361EF98EFC00D27169 /* libOpenNI2.jni.dylib */,
 				036C81BC1EF2F5A4005AF49C /* libpcl_2d.1.8.0.dylib */,
 				036C81BD1EF2F5A4005AF49C /* libpcl_3d_rec_framework.1.8.0.dylib */,
 				036C81BE1EF2F5A4005AF49C /* libpcl_apps.1.8.0.dylib */,
@@ -420,6 +428,7 @@
 					/usr/local/Cellar/boost/1.64.0_1/lib,
 					/usr/local/Cellar/vtk/7.1.1/lib,
 					/usr/local/Cellar/pcl/1.8.0_7/lib,
+					"/usr/local/Cellar/openni2/2.2.0-debian/lib/ni2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -438,6 +447,7 @@
 					/usr/local/Cellar/boost/1.64.0_1/lib,
 					/usr/local/Cellar/vtk/7.1.1/lib,
 					/usr/local/Cellar/pcl/1.8.0_7/lib,
+					"/usr/local/Cellar/openni2/2.2.0-debian/lib/ni2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
