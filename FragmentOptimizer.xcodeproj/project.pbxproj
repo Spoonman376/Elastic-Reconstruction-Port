@@ -7,34 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030513F51EF0562D00FD3510 /* libpcl_2d.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513DC1EF0562D00FD3510 /* libpcl_2d.1.8.0.dylib */; };
+		030513F61EF0562D00FD3510 /* libpcl_3d_rec_framework.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513DD1EF0562D00FD3510 /* libpcl_3d_rec_framework.1.8.0.dylib */; };
+		030513F71EF0562D00FD3510 /* libpcl_apps.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513DE1EF0562D00FD3510 /* libpcl_apps.1.8.0.dylib */; };
+		030513F81EF0562D00FD3510 /* libpcl_common.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513DF1EF0562D00FD3510 /* libpcl_common.1.8.0.dylib */; };
+		030513F91EF0562D00FD3510 /* libpcl_features.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513E01EF0562D00FD3510 /* libpcl_features.1.8.0.dylib */; };
+		030513FA1EF0562D00FD3510 /* libpcl_filters.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513E11EF0562D00FD3510 /* libpcl_filters.1.8.0.dylib */; };
+		030513FB1EF0562D00FD3510 /* libpcl_io_ply.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513E21EF0562D00FD3510 /* libpcl_io_ply.1.8.0.dylib */; };
+		030513FC1EF0562D00FD3510 /* libpcl_io.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513E31EF0562D00FD3510 /* libpcl_io.1.8.0.dylib */; };
+		030513FD1EF0562D00FD3510 /* libpcl_kdtree.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513E41EF0562D00FD3510 /* libpcl_kdtree.1.8.0.dylib */; };
+		030513FE1EF0562D00FD3510 /* libpcl_keypoints.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513E51EF0562D00FD3510 /* libpcl_keypoints.1.8.0.dylib */; };
+		030513FF1EF0562D00FD3510 /* libpcl_ml.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513E61EF0562D00FD3510 /* libpcl_ml.1.8.0.dylib */; };
+		030514001EF0562D00FD3510 /* libpcl_octree.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513E71EF0562D00FD3510 /* libpcl_octree.1.8.0.dylib */; };
+		030514011EF0562D00FD3510 /* libpcl_outofcore.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513E81EF0562D00FD3510 /* libpcl_outofcore.1.8.0.dylib */; };
+		030514021EF0562D00FD3510 /* libpcl_people.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513E91EF0562D00FD3510 /* libpcl_people.1.8.0.dylib */; };
+		030514031EF0562D00FD3510 /* libpcl_recognition.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513EA1EF0562D00FD3510 /* libpcl_recognition.1.8.0.dylib */; };
+		030514041EF0562D00FD3510 /* libpcl_registration.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513EB1EF0562D00FD3510 /* libpcl_registration.1.8.0.dylib */; };
+		030514051EF0562D00FD3510 /* libpcl_sample_consensus.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513EC1EF0562D00FD3510 /* libpcl_sample_consensus.1.8.0.dylib */; };
+		030514061EF0562D00FD3510 /* libpcl_search.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513ED1EF0562D00FD3510 /* libpcl_search.1.8.0.dylib */; };
+		030514071EF0562D00FD3510 /* libpcl_segmentation.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513EE1EF0562D00FD3510 /* libpcl_segmentation.1.8.0.dylib */; };
+		030514081EF0562D00FD3510 /* libpcl_simulation_io.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513EF1EF0562D00FD3510 /* libpcl_simulation_io.1.8.0.dylib */; };
+		030514091EF0562D00FD3510 /* libpcl_simulation.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513F01EF0562D00FD3510 /* libpcl_simulation.1.8.0.dylib */; };
+		0305140A1EF0562D00FD3510 /* libpcl_stereo.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513F11EF0562D00FD3510 /* libpcl_stereo.1.8.0.dylib */; };
+		0305140B1EF0562D00FD3510 /* libpcl_surface.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513F21EF0562D00FD3510 /* libpcl_surface.1.8.0.dylib */; };
+		0305140C1EF0562D00FD3510 /* libpcl_tracking.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513F31EF0562D00FD3510 /* libpcl_tracking.1.8.0.dylib */; };
+		0305140D1EF0562D00FD3510 /* libpcl_visualization.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 030513F41EF0562D00FD3510 /* libpcl_visualization.1.8.0.dylib */; };
 		032396CF1EBBC1B600EEBE5C /* FragmentOptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032396C41EBBC1B600EEBE5C /* FragmentOptimizer.cpp */; };
 		032396D01EBBC1B600EEBE5C /* HashSparseMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032396C51EBBC1B600EEBE5C /* HashSparseMatrix.cpp */; };
 		032396D11EBBC1B600EEBE5C /* OptApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032396C71EBBC1B600EEBE5C /* OptApp.cpp */; };
 		032396D21EBBC1B600EEBE5C /* PointCloud.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032396C91EBBC1B600EEBE5C /* PointCloud.cpp */; };
-		032396ED1EBBC88900EEBE5C /* libpcl_2d.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396D51EBBC88900EEBE5C /* libpcl_2d.1.8.0.dylib */; };
-		032396EE1EBBC88900EEBE5C /* libpcl_apps.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396D61EBBC88900EEBE5C /* libpcl_apps.1.8.0.dylib */; };
-		032396EF1EBBC88900EEBE5C /* libpcl_common.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396D71EBBC88900EEBE5C /* libpcl_common.1.8.0.dylib */; };
-		032396F01EBBC88900EEBE5C /* libpcl_features.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396D81EBBC88900EEBE5C /* libpcl_features.1.8.0.dylib */; };
-		032396F11EBBC88900EEBE5C /* libpcl_filters.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396D91EBBC88900EEBE5C /* libpcl_filters.1.8.0.dylib */; };
-		032396F21EBBC88900EEBE5C /* libpcl_io_ply.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396DA1EBBC88900EEBE5C /* libpcl_io_ply.1.8.0.dylib */; };
-		032396F31EBBC88900EEBE5C /* libpcl_io.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396DB1EBBC88900EEBE5C /* libpcl_io.1.8.0.dylib */; };
-		032396F41EBBC88900EEBE5C /* libpcl_kdtree.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396DC1EBBC88900EEBE5C /* libpcl_kdtree.1.8.0.dylib */; };
-		032396F51EBBC88900EEBE5C /* libpcl_keypoints.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396DD1EBBC88900EEBE5C /* libpcl_keypoints.1.8.0.dylib */; };
-		032396F61EBBC88900EEBE5C /* libpcl_ml.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396DE1EBBC88900EEBE5C /* libpcl_ml.1.8.0.dylib */; };
-		032396F71EBBC88900EEBE5C /* libpcl_octree.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396DF1EBBC88900EEBE5C /* libpcl_octree.1.8.0.dylib */; };
-		032396F81EBBC88900EEBE5C /* libpcl_outofcore.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396E01EBBC88900EEBE5C /* libpcl_outofcore.1.8.0.dylib */; };
-		032396F91EBBC88900EEBE5C /* libpcl_people.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396E11EBBC88900EEBE5C /* libpcl_people.1.8.0.dylib */; };
-		032396FA1EBBC88900EEBE5C /* libpcl_recognition.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396E21EBBC88900EEBE5C /* libpcl_recognition.1.8.0.dylib */; };
-		032396FB1EBBC88900EEBE5C /* libpcl_registration.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396E31EBBC88900EEBE5C /* libpcl_registration.1.8.0.dylib */; };
-		032396FC1EBBC88900EEBE5C /* libpcl_sample_consensus.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396E41EBBC88900EEBE5C /* libpcl_sample_consensus.1.8.0.dylib */; };
-		032396FD1EBBC88900EEBE5C /* libpcl_search.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396E51EBBC88900EEBE5C /* libpcl_search.1.8.0.dylib */; };
-		032396FE1EBBC88900EEBE5C /* libpcl_segmentation.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396E61EBBC88900EEBE5C /* libpcl_segmentation.1.8.0.dylib */; };
-		032396FF1EBBC88900EEBE5C /* libpcl_simulation_io.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396E71EBBC88900EEBE5C /* libpcl_simulation_io.1.8.0.dylib */; };
-		032397001EBBC88900EEBE5C /* libpcl_simulation.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396E81EBBC88900EEBE5C /* libpcl_simulation.1.8.0.dylib */; };
-		032397011EBBC88900EEBE5C /* libpcl_stereo.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396E91EBBC88900EEBE5C /* libpcl_stereo.1.8.0.dylib */; };
-		032397021EBBC88900EEBE5C /* libpcl_surface.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396EA1EBBC88900EEBE5C /* libpcl_surface.1.8.0.dylib */; };
-		032397031EBBC88900EEBE5C /* libpcl_tracking.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396EB1EBBC88900EEBE5C /* libpcl_tracking.1.8.0.dylib */; };
-		032397041EBBC88900EEBE5C /* libpcl_visualization.1.8.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032396EC1EBBC88900EEBE5C /* libpcl_visualization.1.8.0.dylib */; };
 		032397071EBBC8C300EEBE5C /* libboost_system-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032397051EBBC8C300EEBE5C /* libboost_system-mt.dylib */; };
 		032397081EBBC8C300EEBE5C /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032397061EBBC8C300EEBE5C /* libboost_system.dylib */; };
 		0323970A1EBBC8E300EEBE5C /* libboost_filesystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032397091EBBC8E300EEBE5C /* libboost_filesystem.dylib */; };
@@ -59,6 +60,31 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		030513DC1EF0562D00FD3510 /* libpcl_2d.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_2d.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_2d.1.8.0.dylib; sourceTree = "<group>"; };
+		030513DD1EF0562D00FD3510 /* libpcl_3d_rec_framework.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_3d_rec_framework.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_3d_rec_framework.1.8.0.dylib; sourceTree = "<group>"; };
+		030513DE1EF0562D00FD3510 /* libpcl_apps.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_apps.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_apps.1.8.0.dylib; sourceTree = "<group>"; };
+		030513DF1EF0562D00FD3510 /* libpcl_common.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_common.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_common.1.8.0.dylib; sourceTree = "<group>"; };
+		030513E01EF0562D00FD3510 /* libpcl_features.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_features.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_features.1.8.0.dylib; sourceTree = "<group>"; };
+		030513E11EF0562D00FD3510 /* libpcl_filters.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_filters.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_filters.1.8.0.dylib; sourceTree = "<group>"; };
+		030513E21EF0562D00FD3510 /* libpcl_io_ply.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_io_ply.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_io_ply.1.8.0.dylib; sourceTree = "<group>"; };
+		030513E31EF0562D00FD3510 /* libpcl_io.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_io.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_io.1.8.0.dylib; sourceTree = "<group>"; };
+		030513E41EF0562D00FD3510 /* libpcl_kdtree.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_kdtree.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_kdtree.1.8.0.dylib; sourceTree = "<group>"; };
+		030513E51EF0562D00FD3510 /* libpcl_keypoints.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_keypoints.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_keypoints.1.8.0.dylib; sourceTree = "<group>"; };
+		030513E61EF0562D00FD3510 /* libpcl_ml.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_ml.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_ml.1.8.0.dylib; sourceTree = "<group>"; };
+		030513E71EF0562D00FD3510 /* libpcl_octree.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_octree.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_octree.1.8.0.dylib; sourceTree = "<group>"; };
+		030513E81EF0562D00FD3510 /* libpcl_outofcore.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_outofcore.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_outofcore.1.8.0.dylib; sourceTree = "<group>"; };
+		030513E91EF0562D00FD3510 /* libpcl_people.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_people.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_people.1.8.0.dylib; sourceTree = "<group>"; };
+		030513EA1EF0562D00FD3510 /* libpcl_recognition.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_recognition.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_recognition.1.8.0.dylib; sourceTree = "<group>"; };
+		030513EB1EF0562D00FD3510 /* libpcl_registration.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_registration.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_registration.1.8.0.dylib; sourceTree = "<group>"; };
+		030513EC1EF0562D00FD3510 /* libpcl_sample_consensus.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_sample_consensus.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_sample_consensus.1.8.0.dylib; sourceTree = "<group>"; };
+		030513ED1EF0562D00FD3510 /* libpcl_search.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_search.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_search.1.8.0.dylib; sourceTree = "<group>"; };
+		030513EE1EF0562D00FD3510 /* libpcl_segmentation.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_segmentation.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_segmentation.1.8.0.dylib; sourceTree = "<group>"; };
+		030513EF1EF0562D00FD3510 /* libpcl_simulation_io.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_simulation_io.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_simulation_io.1.8.0.dylib; sourceTree = "<group>"; };
+		030513F01EF0562D00FD3510 /* libpcl_simulation.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_simulation.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_simulation.1.8.0.dylib; sourceTree = "<group>"; };
+		030513F11EF0562D00FD3510 /* libpcl_stereo.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_stereo.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_stereo.1.8.0.dylib; sourceTree = "<group>"; };
+		030513F21EF0562D00FD3510 /* libpcl_surface.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_surface.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_surface.1.8.0.dylib; sourceTree = "<group>"; };
+		030513F31EF0562D00FD3510 /* libpcl_tracking.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_tracking.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_tracking.1.8.0.dylib; sourceTree = "<group>"; };
+		030513F41EF0562D00FD3510 /* libpcl_visualization.1.8.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_visualization.1.8.0.dylib; path = ../../../../../usr/local/Cellar/pcl/1.8.0_7/lib/libpcl_visualization.1.8.0.dylib; sourceTree = "<group>"; };
 		032396BA1EBBC15400EEBE5C /* FragmentOptimizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FragmentOptimizer; sourceTree = BUILT_PRODUCTS_DIR; };
 		032396C41EBBC1B600EEBE5C /* FragmentOptimizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FragmentOptimizer.cpp; sourceTree = "<group>"; };
 		032396C51EBBC1B600EEBE5C /* HashSparseMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HashSparseMatrix.cpp; sourceTree = "<group>"; };
@@ -109,6 +135,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030513F51EF0562D00FD3510 /* libpcl_2d.1.8.0.dylib in Frameworks */,
+				030513F61EF0562D00FD3510 /* libpcl_3d_rec_framework.1.8.0.dylib in Frameworks */,
+				030513F71EF0562D00FD3510 /* libpcl_apps.1.8.0.dylib in Frameworks */,
+				030513F81EF0562D00FD3510 /* libpcl_common.1.8.0.dylib in Frameworks */,
+				030513F91EF0562D00FD3510 /* libpcl_features.1.8.0.dylib in Frameworks */,
+				030513FA1EF0562D00FD3510 /* libpcl_filters.1.8.0.dylib in Frameworks */,
+				030513FB1EF0562D00FD3510 /* libpcl_io_ply.1.8.0.dylib in Frameworks */,
+				030513FC1EF0562D00FD3510 /* libpcl_io.1.8.0.dylib in Frameworks */,
+				030513FD1EF0562D00FD3510 /* libpcl_kdtree.1.8.0.dylib in Frameworks */,
+				030513FE1EF0562D00FD3510 /* libpcl_keypoints.1.8.0.dylib in Frameworks */,
+				030513FF1EF0562D00FD3510 /* libpcl_ml.1.8.0.dylib in Frameworks */,
+				030514001EF0562D00FD3510 /* libpcl_octree.1.8.0.dylib in Frameworks */,
+				030514011EF0562D00FD3510 /* libpcl_outofcore.1.8.0.dylib in Frameworks */,
+				030514021EF0562D00FD3510 /* libpcl_people.1.8.0.dylib in Frameworks */,
+				030514031EF0562D00FD3510 /* libpcl_recognition.1.8.0.dylib in Frameworks */,
+				030514041EF0562D00FD3510 /* libpcl_registration.1.8.0.dylib in Frameworks */,
+				030514051EF0562D00FD3510 /* libpcl_sample_consensus.1.8.0.dylib in Frameworks */,
+				030514061EF0562D00FD3510 /* libpcl_search.1.8.0.dylib in Frameworks */,
+				030514071EF0562D00FD3510 /* libpcl_segmentation.1.8.0.dylib in Frameworks */,
+				030514081EF0562D00FD3510 /* libpcl_simulation_io.1.8.0.dylib in Frameworks */,
+				030514091EF0562D00FD3510 /* libpcl_simulation.1.8.0.dylib in Frameworks */,
+				0305140A1EF0562D00FD3510 /* libpcl_stereo.1.8.0.dylib in Frameworks */,
+				0305140B1EF0562D00FD3510 /* libpcl_surface.1.8.0.dylib in Frameworks */,
+				0305140C1EF0562D00FD3510 /* libpcl_tracking.1.8.0.dylib in Frameworks */,
+				0305140D1EF0562D00FD3510 /* libpcl_visualization.1.8.0.dylib in Frameworks */,
 				032397131EBBCDA100EEBE5C /* libamd.2.4.6.dylib in Frameworks */,
 				032397141EBBCDA100EEBE5C /* libcamd.2.4.6.dylib in Frameworks */,
 				032397151EBBCDA100EEBE5C /* libccolamd.2.9.6.dylib in Frameworks */,
@@ -118,30 +169,6 @@
 				0323970A1EBBC8E300EEBE5C /* libboost_filesystem.dylib in Frameworks */,
 				032397071EBBC8C300EEBE5C /* libboost_system-mt.dylib in Frameworks */,
 				032397081EBBC8C300EEBE5C /* libboost_system.dylib in Frameworks */,
-				032396ED1EBBC88900EEBE5C /* libpcl_2d.1.8.0.dylib in Frameworks */,
-				032396EE1EBBC88900EEBE5C /* libpcl_apps.1.8.0.dylib in Frameworks */,
-				032396EF1EBBC88900EEBE5C /* libpcl_common.1.8.0.dylib in Frameworks */,
-				032396F01EBBC88900EEBE5C /* libpcl_features.1.8.0.dylib in Frameworks */,
-				032396F11EBBC88900EEBE5C /* libpcl_filters.1.8.0.dylib in Frameworks */,
-				032396F21EBBC88900EEBE5C /* libpcl_io_ply.1.8.0.dylib in Frameworks */,
-				032396F31EBBC88900EEBE5C /* libpcl_io.1.8.0.dylib in Frameworks */,
-				032396F41EBBC88900EEBE5C /* libpcl_kdtree.1.8.0.dylib in Frameworks */,
-				032396F51EBBC88900EEBE5C /* libpcl_keypoints.1.8.0.dylib in Frameworks */,
-				032396F61EBBC88900EEBE5C /* libpcl_ml.1.8.0.dylib in Frameworks */,
-				032396F71EBBC88900EEBE5C /* libpcl_octree.1.8.0.dylib in Frameworks */,
-				032396F81EBBC88900EEBE5C /* libpcl_outofcore.1.8.0.dylib in Frameworks */,
-				032396F91EBBC88900EEBE5C /* libpcl_people.1.8.0.dylib in Frameworks */,
-				032396FA1EBBC88900EEBE5C /* libpcl_recognition.1.8.0.dylib in Frameworks */,
-				032396FB1EBBC88900EEBE5C /* libpcl_registration.1.8.0.dylib in Frameworks */,
-				032396FC1EBBC88900EEBE5C /* libpcl_sample_consensus.1.8.0.dylib in Frameworks */,
-				032396FD1EBBC88900EEBE5C /* libpcl_search.1.8.0.dylib in Frameworks */,
-				032396FE1EBBC88900EEBE5C /* libpcl_segmentation.1.8.0.dylib in Frameworks */,
-				032396FF1EBBC88900EEBE5C /* libpcl_simulation_io.1.8.0.dylib in Frameworks */,
-				032397001EBBC88900EEBE5C /* libpcl_simulation.1.8.0.dylib in Frameworks */,
-				032397011EBBC88900EEBE5C /* libpcl_stereo.1.8.0.dylib in Frameworks */,
-				032397021EBBC88900EEBE5C /* libpcl_surface.1.8.0.dylib in Frameworks */,
-				032397031EBBC88900EEBE5C /* libpcl_tracking.1.8.0.dylib in Frameworks */,
-				032397041EBBC88900EEBE5C /* libpcl_visualization.1.8.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +210,31 @@
 		032396D41EBBC88800EEBE5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				030513DC1EF0562D00FD3510 /* libpcl_2d.1.8.0.dylib */,
+				030513DD1EF0562D00FD3510 /* libpcl_3d_rec_framework.1.8.0.dylib */,
+				030513DE1EF0562D00FD3510 /* libpcl_apps.1.8.0.dylib */,
+				030513DF1EF0562D00FD3510 /* libpcl_common.1.8.0.dylib */,
+				030513E01EF0562D00FD3510 /* libpcl_features.1.8.0.dylib */,
+				030513E11EF0562D00FD3510 /* libpcl_filters.1.8.0.dylib */,
+				030513E21EF0562D00FD3510 /* libpcl_io_ply.1.8.0.dylib */,
+				030513E31EF0562D00FD3510 /* libpcl_io.1.8.0.dylib */,
+				030513E41EF0562D00FD3510 /* libpcl_kdtree.1.8.0.dylib */,
+				030513E51EF0562D00FD3510 /* libpcl_keypoints.1.8.0.dylib */,
+				030513E61EF0562D00FD3510 /* libpcl_ml.1.8.0.dylib */,
+				030513E71EF0562D00FD3510 /* libpcl_octree.1.8.0.dylib */,
+				030513E81EF0562D00FD3510 /* libpcl_outofcore.1.8.0.dylib */,
+				030513E91EF0562D00FD3510 /* libpcl_people.1.8.0.dylib */,
+				030513EA1EF0562D00FD3510 /* libpcl_recognition.1.8.0.dylib */,
+				030513EB1EF0562D00FD3510 /* libpcl_registration.1.8.0.dylib */,
+				030513EC1EF0562D00FD3510 /* libpcl_sample_consensus.1.8.0.dylib */,
+				030513ED1EF0562D00FD3510 /* libpcl_search.1.8.0.dylib */,
+				030513EE1EF0562D00FD3510 /* libpcl_segmentation.1.8.0.dylib */,
+				030513EF1EF0562D00FD3510 /* libpcl_simulation_io.1.8.0.dylib */,
+				030513F01EF0562D00FD3510 /* libpcl_simulation.1.8.0.dylib */,
+				030513F11EF0562D00FD3510 /* libpcl_stereo.1.8.0.dylib */,
+				030513F21EF0562D00FD3510 /* libpcl_surface.1.8.0.dylib */,
+				030513F31EF0562D00FD3510 /* libpcl_tracking.1.8.0.dylib */,
+				030513F41EF0562D00FD3510 /* libpcl_visualization.1.8.0.dylib */,
 				0323970D1EBBCDA100EEBE5C /* libamd.2.4.6.dylib */,
 				0323970E1EBBCDA100EEBE5C /* libcamd.2.4.6.dylib */,
 				0323970F1EBBCDA100EEBE5C /* libccolamd.2.9.6.dylib */,
@@ -389,6 +441,7 @@
 					/usr/local/Cellar/boost/1.64.0_1/lib,
 					"$(PROJECT_DIR)/FragmentOptimizer/external/SuiteSparse/Lib",
 					"/usr/local/Cellar/suite-sparse/4.5.4/lib",
+					/usr/local/Cellar/pcl/1.8.0_7/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -408,6 +461,7 @@
 					/usr/local/Cellar/boost/1.64.0_1/lib,
 					"$(PROJECT_DIR)/FragmentOptimizer/external/SuiteSparse/Lib",
 					"/usr/local/Cellar/suite-sparse/4.5.4/lib",
+					/usr/local/Cellar/pcl/1.8.0_7/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

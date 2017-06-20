@@ -68,7 +68,7 @@
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "bad_data/"
+            argument = "data/"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
@@ -76,11 +76,11 @@
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "bad_data/100-0.log"
+            argument = "data/100-0.log"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "25"
+            argument = "50"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
