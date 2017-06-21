@@ -356,7 +356,7 @@ int main(int argc, char * argv[])
 		if ( boost::filesystem::exists( "result.txt" ) ) {
 			cout << "result.txt detected. skip global registration." << endl;
 		} else {
-			do_all( num_of_pcds );
+			do_all( num_of_pcds ); //Note: These two things, albeit 99% copy-paste, arn't entierly the same. 
 		}
 	}
 

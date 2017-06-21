@@ -112,7 +112,8 @@ void CIntegrateApp::StartMainLoop( bool triggered_capture )
 			has_data = data_ready_cond_.timed_wait( lock, boost::posix_time::millisec( 300 ) );
 
 			if ( has_data ) {
-				ten_has_data_fail_then_we_call_it_a_day = 0;
+        ten_has_data_fail_then_we_call_it_a_day = 0;
+//        cout << " WE HAS DATA " << endl;
 			} else {
 				ten_has_data_fail_then_we_call_it_a_day++;
 			}
@@ -136,11 +137,9 @@ void CIntegrateApp::StartMainLoop( bool triggered_capture )
 			capture_.stop (); // Stop stream
 		}
 
-//		volume_.SaveWorld( pcd_filename_ );
+		volume_.SaveWorld( pcd_filename_ );
 
 		cout << "Total " << frame_id_ << " frames processed." << endl;
-
-		//volume_.SaveWorld( std::string( "world.pcd" ) );
 	}
 	c.disconnect();
 }
@@ -185,9 +184,22 @@ void CIntegrateApp::source_cb2_trigger( const boost::shared_ptr< openni_wrapper:
 			depth_.resize( cols_ * rows_ );
 			scaled_depth_.resize( cols_ * rows_ );
 		}
-                  
+   
+//    memcpy (&depth_[0], depth_wrapper->getData (), depth_wrapper->DataSize ());
+
 		depth_wrapper->fillDepthImageRaw( cols_, rows_, &depth_[ 0 ] );
 		frame_id_ = depth_wrapper->getDepthMetaData().FrameID();
+
+/*  
+    for(int i; i < depth_.size(); i++){
+      if( depth_[i] != 0 ){
+        cout << " OUR ASSUMPUTION WAS WRONG, " << i << endl;
+      }
+    }  
+*/
+//    pcl::io::savePCDFileBinary("fun",pcl::OpenNIGrabber::convertToXYZRGBPointCloud(image_wrapper,depth_wrapper));
+//    pcl::io::savePCDFile ("cloud_bin.pcd", capture_.convertToXYZRGBPointCloud(image_wrapper,depth_wrapper), true);
+
 	}
 	data_ready_cond_.notify_one();
 }
@@ -199,10 +211,12 @@ void CIntegrateApp::Execute( bool has_data )
 	}
 
 	if ( traj_.data_[ frame_id_ - 1 ].frame_ == -1 ) {
+    cout << " Bye" << endl;
 		return;
 	}
 
 	if ( frame_id_ >= traj_.data_.size() ) {
+    cout << " Bye 2 " << endl;
 		exit_ = true;
 		return;
 	}
@@ -233,6 +247,8 @@ void CIntegrateApp::Execute( bool has_data )
 void CIntegrateApp::Reproject()
 {
 	if ( frame_id_ > ctr_interval_ * ctr_num_ ) {
+    
+    cout << " Bye 3 : " << frame_id_ << " :: " << ctr_interval_ * ctr_num_  << endl;
 		exit_ = true;
 		return;
 	}
@@ -249,10 +265,14 @@ void CIntegrateApp::Reproject()
 	int uu, vv;
 	unsigned short dd;
 	double x, y, z;
+//  cout << "wo" << endl;
 	for ( int v = 0; v < rows_; v += 1 ) {
+//    cout << "f1" << endl;
 		for ( int u = 0; u < cols_; u += 1 ) {
+//      cout << "f2" << endl;
 			unsigned short d = depth_buffer_[ v * cols_ + u ];
 			if ( volume_.UVD2XYZ( u, v, d, x, y, z ) ) {
+//        //cout << "f3" << endl;
 				Eigen::Vector4d dummy = seg_traj_.data_[ frame_id_ - 1 ].transformation_ * Eigen::Vector4d( x, y, z, 1 );
 				Coordinate coo;
 				Eigen::Vector3f pos;

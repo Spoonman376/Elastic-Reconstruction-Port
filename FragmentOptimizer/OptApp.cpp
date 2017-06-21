@@ -1,4 +1,7 @@
 //#include "StdAfx.h"
+
+#define newSolver
+
 #include "OptApp.h"
 #include <pcl/console/print.h>
 #include <pcl/point_cloud.h>
@@ -206,7 +209,12 @@ void COptApp::OptimizeNonrigid()
 		}
 		PCL_INFO( " ... Done.\n" );
 
+    #ifdef newSolver
+    Eigen::CholmodSimplicialLLT< SparseMatrix, Eigen::Upper > solver;
+    #else
 		Eigen::CholmodSupernodalLLT< SparseMatrix, Eigen::Upper > solver;
+    #endif
+
 		solver.analyzePattern( thisAA );
 		solver.factorize( thisAA );
 
@@ -385,8 +393,13 @@ void COptApp::OptimizeRigid()
 		}
 		PCL_INFO( " ... Done.\n" );
 		PCL_INFO( "Error score is : %.2f\n", thisscore );
-
+    
+    #ifdef newSolver
+    Eigen::CholmodSimplicialLLT< SparseMatrix, Eigen::Upper > solver;
+    #else
 		Eigen::CholmodSupernodalLLT< SparseMatrix, Eigen::Upper > solver;
+    #endif
+
 		solver.analyzePattern( thisJJ );
 		solver.factorize( thisJJ );
 
@@ -572,7 +585,13 @@ void COptApp::OptimizeSLAC()
 			PCL_INFO( "Data error score is : %.2f\n", thisscore );
 
 			SparseMatrix thisSparseJJ = thisJJ.sparseView();
-			Eigen::CholmodSupernodalLLT< SparseMatrix, Eigen::Upper > solver;
+
+    #ifdef newSolver
+    Eigen::CholmodSimplicialLLT< SparseMatrix, Eigen::Upper > solver;
+    #else
+		Eigen::CholmodSupernodalLLT< SparseMatrix, Eigen::Upper > solver;
+    #endif
+
 			solver.analyzePattern( thisSparseJJ );
 			solver.factorize( thisSparseJJ );
 
