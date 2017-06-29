@@ -23,7 +23,7 @@ int main(int argc, char * argv[])
 		( "weight,w", po::value< double >( &app.weight_ )->default_value( 1.0 ), "weight for switchable constraint penalty" )
 		( "iteration,i", po::value< int >( &app.max_iteration_ )->default_value( 100 ), "maximum optimization iteration" )
 	;
-		std::string odometry_log_file_;
+	std::string odometry_log_file_;
 	std::string loop_log_file_;
 	std::string odometry_info_file_;
 	std::string loop_info_file_;

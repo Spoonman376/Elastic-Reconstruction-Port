@@ -240,6 +240,7 @@ void CIntegrateApp::Execute( bool has_data )
 		}
 	}
 
+//  scaled_depth_.clear();
 	volume_.ScaleDepth( depth_, scaled_depth_ );
 	volume_.Integrate( depth_, scaled_depth_, traj_.data_[ frame_id_ - 1 ].transformation_ );
 }
