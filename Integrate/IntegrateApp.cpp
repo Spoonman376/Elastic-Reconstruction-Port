@@ -2,11 +2,9 @@
 #include "IntegrateApp.h"
 
 
-CIntegrateApp::CIntegrateApp( pcl::Grabber & source, bool use_device )
+CIntegrateApp::CIntegrateApp()
 	: cols_( 640 ), rows_( 480 )
 	, volume_( cols_, rows_ )
-	, capture_( source )
-	, use_device_( use_device )
 	, exit_( false )
 	, registration_( false )
 	, time_ms_( 0 )
@@ -24,9 +22,6 @@ CIntegrateApp::CIntegrateApp( pcl::Grabber & source, bool use_device )
 	, start_from_( -1 )
 	, end_at_( 100000000 )
 {
-	registration_ = capture_.providesCallback< pcl::ONIGrabber::sig_cb_openni_image_depth_image > ();
-	cout << "Registration mode: " << ( registration_ ? "On" : "Off (not supported by source)" ) << endl;
-
 	depth_.resize( cols_ * rows_ );
 	scaled_depth_.resize( cols_ * rows_ );
 
@@ -78,72 +73,55 @@ void CIntegrateApp::Init()
 	}
 }
 
-void CIntegrateApp::StartMainLoop( bool triggered_capture )
+void CIntegrateApp::StartMainLoop()
 {
-	using namespace openni_wrapper;
-	typedef boost::shared_ptr< DepthImage > DepthImagePtr;
-	typedef boost::shared_ptr< Image > ImagePtr;
-        
-	boost::function<void (const ImagePtr&, const DepthImagePtr&, float constant)> call_back_func;
-	
-	if ( !triggered_capture ) {
-		call_back_func = boost::bind( &CIntegrateApp::source_cb2, this, _1, _2, _3 );
-	} else {
-		call_back_func = boost::bind( &CIntegrateApp::source_cb2_trigger, this, _1, _2, _3 );
-	}
-	boost::signals2::connection c = capture_.registerCallback ( call_back_func );
+  cv::Mat depthFrame;
+  cv::Mat colourFrame;
 
-	{
-		boost::unique_lock< boost::mutex > lock( data_ready_mutex_ );
-	
-    //Following PCL syntax
-    if(! triggered_capture){
-  		capture_.start (); // Start stream
+  string depthPath = imageDir + "depthframes/";
+  string colourPath = imageDir + "colourframes/";
+
+  size_t numFrames =  std::count_if(boost::filesystem::directory_iterator(boost::filesystem::path(depthPath)),
+                                    boost::filesystem::directory_iterator(),
+                                    [](const boost::filesystem::directory_entry& e)
+                                      { return e.path().extension() == ".png";  }
+                                   );
+
+  for (int i = 0; i < numFrames; ++i) {
+
+    string depthName = depthPath + "Image" + to_string(i) + ".png";
+
+    depthFrame = cv::imread(depthPath);
+
+		if ( depthFrame.cols != cols_ || depthFrame.rows != rows_ ) {
+			cols_ = depthFrame.cols;
+			rows_ = depthFrame.rows;
+			depth_.resize(cols_ * rows_);
+			scaled_depth_.resize(cols_ * rows_);
+		}
+
+    for (int j = 0; j < rows_; ++j)
+      for (int k = 0; k < cols_; ++ k)
+        depth_[j * cols_ + k] = depthFrame.at<unsigned short>(j, k);
+
+
+    frame_id_ = i;
+
+
+    try {
+      this->Execute( true );
+
     }
-    
-		int ten_has_data_fail_then_we_call_it_a_day = 0;
-		while ( !exit_ ) {
-			bool has_data;
-      //Following PCL 
-			if ( triggered_capture ) {
-				//( ( pcl::ONIGrabber * ) &capture_ )->trigger(); // Triggers new frame
-        capture_.start(); //Trigger new frame (FROM PCL)
-			}
-			has_data = data_ready_cond_.timed_wait( lock, boost::posix_time::millisec( 300 ) );
+    catch (const std::bad_alloc& /*e*/) { cout << "Bad alloc" << endl; break; }
+    catch (const std::exception& /*e*/) { cout << "Exception" << endl; break; }
 
-			if ( has_data ) {
-				ten_has_data_fail_then_we_call_it_a_day = 0;
-			} else {
-				ten_has_data_fail_then_we_call_it_a_day++;
-			}
-			try {
-				this->Execute( has_data );
+  }
 
-#ifdef IMAGE_VIEWER
-				viewer_depth_.showShortImage( &depth_[ 0 ], cols_, rows_, 0, 3000, true );
-				viewer_depth_.spinOnce( 3 );
-#endif
-			}
-			catch (const std::bad_alloc& /*e*/) { cout << "Bad alloc" << endl; break; }
-			catch (const std::exception& /*e*/) { cout << "Exception" << endl; break; }
+  cout << "Total " << frame_id_ << " frames processed." << endl;
 
-			if ( ten_has_data_fail_then_we_call_it_a_day >= 10 ) {
-				exit_ = true;
-			}
-		}
-      
-		if ( !triggered_capture ) {
-			capture_.stop (); // Stop stream
-		}
-
-//		volume_.SaveWorld( pcd_filename_ );
-
-		cout << "Total " << frame_id_ << " frames processed." << endl;
-
-		//volume_.SaveWorld( std::string( "world.pcd" ) );
-	}
-	c.disconnect();
+  //volume_.SaveWorld( std::string( "world.pcd" ) );
 }
+
 
 //////////////////////////////////////////////
 // Capture functions
