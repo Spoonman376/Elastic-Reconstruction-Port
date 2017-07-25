@@ -89,13 +89,22 @@ void VoxelGridFilter::myFilter(PointCloudT &output)
   if (!initCompute())
     return;
 
-
-  PointCloudT output_temp;
-  myApplyFilter(output_temp);
-  output_temp.header = input_->header;
-  output_temp.sensor_origin_ = input_->sensor_origin_;
-  output_temp.sensor_orientation_ = input_->sensor_orientation_;
-  pcl::copyPointCloud(output_temp, output);
+  if (input_.get() == &output)  // cloud_in = cloud_out
+  {
+    PointCloud output_temp;
+    myApplyFilter(output_temp);
+    output_temp.header = input_->header;
+    output_temp.sensor_origin_ = input_->sensor_origin_;
+    output_temp.sensor_orientation_ = input_->sensor_orientation_;
+    pcl::copyPointCloud(output_temp, output);
+  }
+  else
+  {
+    output.header = input_->header;
+    output.sensor_origin_ = input_->sensor_origin_;
+    output.sensor_orientation_ = input_->sensor_orientation_;
+    myApplyFilter(output);
+  }
 
   deinitCompute();
 }

@@ -64,23 +64,23 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "odometry.log"
+            argument = "--odometry odometry.log"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "odometry.info"
+            argument = "--odometryinfo odometry.info"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "result.txt"
+            argument = "--loop result.txt"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "result.info"
+            argument = "--loopinfo result.info"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "pose.log"
+            argument = "--pose pose.log"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

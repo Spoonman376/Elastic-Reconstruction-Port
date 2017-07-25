@@ -59,7 +59,7 @@ void COptApp::OptimizeSwitchable()
 		FramedTransformation * t_;
 	};
 
-    g2o::SparseOptimizer* optimizer;
+  g2o::SparseOptimizer* optimizer;
 	optimizer = new g2o::SparseOptimizer();
 	optimizer->setVerbose(true);
 	SlamBlockSolver * solver = NULL;

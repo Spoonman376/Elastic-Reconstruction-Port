@@ -64,7 +64,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "--pose_traj ./hack/pose.log --seg_traj ./hack/100-0.log --ctr ./hack/output.ctr --num $NUMPCDS --resolution 12 --camera ../cam.param -oni ../in.oni --length 4.0 --interval 50"
+            argument = "--pose_traj ./hack/pose.log --seg_traj ./hack/100-0.log --ctr output.ctr --num 50 --resolution 12 --camera ../cam.param -oni ../in.oni --length 4.0 --interval 50"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

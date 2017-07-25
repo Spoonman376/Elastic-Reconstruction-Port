@@ -647,8 +647,8 @@ template <typename PointSource, typename PointTarget, typename FeatureT> void
 		rots_.push_back( Eigen::Quaternionf( x.linear() ) );
 		trans_.push_back( x.translation() );
 
-    if (lowest_error < 0.001)
-      break;
+//    if (lowest_error < 0.001)
+//      break;
 
 	}
 

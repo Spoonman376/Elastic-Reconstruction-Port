@@ -2,38 +2,4 @@
 <Bucket
    type = "1"
    version = "2.0">
-   <Breakpoints>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Integrate/TSDFVolume.cpp"
-            timestampString = "519611928.763271"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "TSDFVolume::Integrate( std::vector&lt; unsigned short &gt; &amp; depth, std::vector&lt; float &gt; &amp; scaled, Eigen::Matrix4d &amp; transformation )"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Integrate/IntegrateApp.cpp"
-            timestampString = "519613820.55648"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
-            landmarkName = "CIntegrateApp::source_cb2_trigger( const boost::shared_ptr&lt; openni_wrapper::Image &gt;&amp; image_wrapper, const boost::shared_ptr&lt; openni_wrapper::DepthImage &gt;&amp; depth_wrapper, float )"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-   </Breakpoints>
 </Bucket>
