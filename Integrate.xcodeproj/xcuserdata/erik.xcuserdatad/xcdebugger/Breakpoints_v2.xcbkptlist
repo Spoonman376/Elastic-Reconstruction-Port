@@ -26,44 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Integrate/IntegrateApp.cpp"
-            timestampString = "519674021.089184"
+            timestampString = "522700725.340654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "CIntegrateApp::source_cb2_trigger( const boost::shared_ptr&lt; openni_wrapper::Image &gt;&amp; image_wrapper, const boost::shared_ptr&lt; openni_wrapper::DepthImage &gt;&amp; depth_wrapper, float )"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Integrate/IntegrateApp.cpp"
-            timestampString = "519674021.089184"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "CIntegrateApp::StartMainLoop()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Integrate/IntegrateApp.cpp"
-            timestampString = "519674009.847266"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "CIntegrateApp::CIntegrateApp( string &amp; source)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
