@@ -136,7 +136,7 @@ void CIntegrateApp::StartMainLoop( bool triggered_capture )
 			capture_.stop (); // Stop stream
 		}
 
-//		volume_.SaveWorld( pcd_filename_ );
+		volume_.SaveWorld( pcd_filename_ );
 
 		cout << "Total " << frame_id_ << " frames processed." << endl;
 
@@ -194,6 +194,7 @@ void CIntegrateApp::source_cb2_trigger( const boost::shared_ptr< openni_wrapper:
 
 void CIntegrateApp::Execute( bool has_data )
 {
+  std::cout << "WE: " << frame_id_ << std::endl;
 	if ( !has_data ) {
 		return;
 	}

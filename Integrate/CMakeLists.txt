@@ -15,6 +15,7 @@ add_definitions(
     -std=c++11
     -g
     ${PCL_DEFINITIONS}
+    -O0
     )
 
 #Handles includes (via directories)
