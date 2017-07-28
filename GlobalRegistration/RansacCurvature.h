@@ -720,9 +720,9 @@ template <typename PointSource, typename PointTarget, typename FeatureT> void
 		const float & sy = source_it->y;
 		const float & sz = source_it->z;
 		Eigen::Matrix< double, 3, 6 > A;
-		A << 1, 0, 0, 0, 2 * sz, - 2 * sy,
-			0, 1, 0, - 2 * sz, 0, 2 * sx,
-			0, 0, 1, 2 * sy, - 2 * sx, 0;
+		A << 1, 0, 0, 0,       2 * sz,  -2 * sy,
+         0, 1, 0, -2 * sz, 0,       2 * sx,
+         0, 0, 1, 2 * sy,  -2 * sx, 0;
 		information_source_ += A.transpose() * A;
 
 		const PointTarget * target_it = &( target_->points[ inliers_target_[ i ] ] );

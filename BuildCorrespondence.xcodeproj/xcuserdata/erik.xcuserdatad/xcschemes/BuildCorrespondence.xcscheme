@@ -47,7 +47,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/erik/Desktop/Test_Data/BuildCorrespondence"
+      customWorkingDirectory = "/Users/erik/Desktop/3D-Reconstruction/BuildCorrespondence"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -64,7 +64,15 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "--reg_traj refine.log"
+            argument = "--reg_traj reg_refine_all.log"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--reg_num 0"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--registration"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument

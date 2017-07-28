@@ -47,7 +47,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/erik/Desktop/Test_Data/FragmentOptimizer"
+      customWorkingDirectory = "/Users/erik/Desktop/3D-Reconstruction/BuildCorrespondence"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -72,11 +72,11 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "--dir ../GlobalRegistration/data/"
+            argument = "--dir ./"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "--num 50"
+            argument = "--num 5"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument

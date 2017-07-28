@@ -39,7 +39,7 @@ void CCorresApp::LoadData( std::string filename, int num )
 	memset( m_pDirName, 0, 1024 );
 //	strncat( m_pDirName, filename.c_str(), c - filename.c_str() + 1 );
 
-  string dir = "../GlobalRegistration/data/";
+  string dir = "./";
 
   strcpy(m_pDirName, dir.c_str());
 
@@ -303,7 +303,7 @@ void CCorresApp::Registration()
 		typedef pcl::registration::TransformationEstimationPointToPlaneLLS<pcl::PointXYZRGBNormal, pcl::PointXYZRGBNormal> PointToPlane;
 		boost::shared_ptr<PointToPlane> point_to_plane(new PointToPlane);
 
-		icp.setInputCloud( pcd1 );
+		icp.setInputSource( pcd1 );
 		icp.setInputTarget( pcd0 );
 		icp.setMaxCorrespondenceDistance( reg_dist_ );
 		icp.setMaximumIterations( 20 );

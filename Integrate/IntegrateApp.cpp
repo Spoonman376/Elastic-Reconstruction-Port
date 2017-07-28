@@ -75,9 +75,6 @@ void CIntegrateApp::Init()
 
 void CIntegrateApp::StartMainLoop()
 {
-  cv::Mat depthFrame;
-  cv::Mat colourFrame;
-
   string depthPath = imageDir + "depthframes/";
   string colourPath = imageDir + "colourframes/";
 
@@ -87,11 +84,13 @@ void CIntegrateApp::StartMainLoop()
                                       { return e.path().extension() == ".png";  }
                                    );
 
-  for (int i = 0; i < numFrames; ++i) {
+  for (int i = 1; i < 2; ++i) {
+    cv::Mat depthFrame;
+//    cv::Mat colourFrame;
 
     string depthName = depthPath + "Image" + to_string(i) + ".png";
 
-    depthFrame = cv::imread(depthPath);
+    depthFrame = cv::imread(depthName, cv::IMREAD_ANYDEPTH);
 
 		if ( depthFrame.cols != cols_ || depthFrame.rows != rows_ ) {
 			cols_ = depthFrame.cols;
@@ -102,15 +101,12 @@ void CIntegrateApp::StartMainLoop()
 
     for (int j = 0; j < rows_; ++j)
       for (int k = 0; k < cols_; ++ k)
-        depth_[j * cols_ + k] = depthFrame.at<unsigned short>(j, k);
+        depth_[j * cols_ + k] = depthFrame.ptr<unsigned short>(j)[k];
 
-
-    frame_id_ = i;
-
+    frame_id_ = i + 1;
 
     try {
       this->Execute( true );
-
     }
     catch (const std::bad_alloc& /*e*/) { cout << "Bad alloc" << endl; break; }
     catch (const std::exception& /*e*/) { cout << "Exception" << endl; break; }
@@ -119,7 +115,7 @@ void CIntegrateApp::StartMainLoop()
 
   cout << "Total " << frame_id_ << " frames processed." << endl;
 
-  //volume_.SaveWorld( std::string( "world.pcd" ) );
+  volume_.SaveWorld( std::string( "world.pcd" ) );
 }
 
 
